@@ -1,0 +1,157 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "monserra-light";
+  src:
+    url("fonts/montserra/montserratalternates-light.woff2") format("woff2"),
+    url("fonts/montserra/montserratalternates-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monserra-medium";
+  src:
+    url("fonts/montserra/montserratalternates-medium.woff2") format("woff2"),
+    url("fonts/montserra/montserratalternates-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dejavu";
+  src:
+    url("fonts/dejavu/dejavusans-bold.woff2") format("woff2"),
+    url("fonts/dejavu/dejavusans-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sourcesans";
+  src:
+    url("fonts/sourcesans/sourcesanspro-light.woff2") format("woff2"),
+    url("fonts/sourcesans/sourcesanspro-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+ background-color: #f0cbab;
+}
+
+.container {
+  display: flex;
+  height: 1200px;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.splitscreen-left {
+  display: flex;
+  height: 1200px;
+  width: 40vw;
+  background: url(images/mountainFlowers.jpg);
+  background-size: 1800px 1200px;
+  background-repeat: no-repeat;  
+}
+
+.company-container {
+  position: relative;
+  left: 350px;
+  top: 50px;
+}
+
+.icon-img {
+  height: auto; 
+  width: auto; 
+  max-width: 80px; 
+  max-height: 80px;
+  min-width: 80px; 
+  min-height: 80px
+}
+
+.company-name {
+  font-family: monserra-medium;
+  font-size: 30px;
+  color: #4f4338;
+}
+
+.splitscreen-right {
+  display: flex;
+  flex-direction: column;
+  height: 1200px;
+  width: 60vw;
+  background-color: #f0cbab;
+}
+
+.form-header {
+  display: flex;
+  margin: 140px 40px 40px 40px;
+  font-family: sourcesans;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  margin: 40px;
+  font-family: sourcesans;
+  font-size: 20px;
+}
+
+legend {
+  font-size: 24px;
+  padding: 0px 0px 20px 0px;
+}
+
+.signup-form {
+    width: 35vw;
+}
+
+fieldset {
+  border-radius: 8px;
+  padding: 50px 50px 50px -30px;
+  background-color: #ffe5cf;
+}
+
+.inputs-1, .inputs-2, .inputs-3 {
+  display: flex;
+  gap: 8em;
+
+  padding-top: 30px;
+}
+
+input {
+    height: 24px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+input:focus {
+  border: solid rgb(153, 153, 251) 1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+input#password:invalid, 
+input#confirm-password:invalid {
+  border: solid rgb(251, 143, 143) 1px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.login-link {
+  margin: 0px 40px 40px 40px;
+  font-family: sourcesans;
+  font-size: 18px;
+}

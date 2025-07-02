@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="splitscreen-left">
+            <div class="company-container">
+                <div class="icon">
+                    <img class="icon-img" src="images/mountains2.svg">
+                </div>
+                <div class="company-name">Mountain Trek</div>
+            </div>
+        </div>
+        <div class="splitscreen-right">
+            <div class="form-header">
+                <p>Embark on unforgettable trails with us. Fill out the form below to plan your next adventure into the wild — whether you're chasing peaks or seeking peaceful paths, we're here to guide you every step of the way.</p>
+            </div>
+            <div class="form">
+                <form class="signup-form" method="get" action="www.forms.com">
+                    <legend>Sign Up Here:</legend>
+                        <fieldset class="inputs">
+                            <div class="inputs-1">
+                                <div>
+                                    <label for="first-name">First Name: </label>
+                                    <input id="first-name" name="first-name" type="text" pattern="[A-Za-z]+" placeholder="Gary" required>
+                                </div>
+                                <div>
+                                    <label for="last-name">Last Name: </label>
+                                    <input id="last-name" name="last-name" type="text" pattern="[A-Za-z]+" placeholder="Smith" required>
+                                </div>
+                            </div>
+                            <div class="inputs-2">
+                                <div>
+                                    <label for="email">Email: </label>
+                                    <input id="email" name="email" type="email" placeholder="gary.smith@email.com" required>
+                                </div>
+                                <div>
+                                    <label for="phone-number">Phone Number: </label>
+                                    <input id="phone-number" name="phone-number" type="number" placeholder="(250) 777 3152" required>
+                                </div>
+                            </div>
+                            <div class="inputs-3">
+                                <div>
+                                    <label for="password">Password: </label>
+                                    <input id="password" name="password" type="password" required>
+                                </div>
+                                <div>
+                                    <label for="confirm-password">Confirm password: </label>
+                                    <input id="confirm-password" name="confirm-password" type="password" required>
+                                </div>
+                            </div>
+                            <br>
+                        </fieldset>
+                        <button>Create Account</button>
+                </form>
+            </div>
+            <div class="login-link">
+                 <p>Already have an account? <a href="">Log in</a> instead.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
